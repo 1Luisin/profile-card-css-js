@@ -22,6 +22,9 @@ h1, h2 { text-align: center; color: #1c1e21; }
     gap: 40px;
     margin-top: 20px;
 }
+#bio-input{
+    resize: vertical;
+}
 .card-controller, .card-preview { flex: 1; }
 .card-controller {
     display: flex;
@@ -39,6 +42,7 @@ input, textarea, select {
 }
 /* Estilos do Cartão */
 .card-display {
+
     background-color: #f8f9fa;
     border-radius: 10px;
     padding: 25px;
