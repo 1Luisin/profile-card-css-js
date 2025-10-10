@@ -10,6 +10,7 @@ const avatarCard = document.getElementById('card-avatar');
 const nameCard = document.getElementById('card-name');
 const bioCard = document.getElementById('card-bio');
 const bioInput = document.getElementById('bio-input');
+const displayCard = document.getElementsByClassName('card-display borda-solida');
 
 inputName.addEventListener("input", (evento) => {
     nameCard.textContent = inputName.value;
@@ -27,3 +28,7 @@ selectColor.addEventListener("change", (evento) => {
 selectBorder.addEventListener("change", (evento) => {
     cardProfile.style.border = selectBorder.value;
 }); // alterando a borda do card
+
+selectAvatar.addEventListener("change", (evento) => {
+    avatarCard.src = selectAvatar.value;
+}); // alterando a imagem do avatar
