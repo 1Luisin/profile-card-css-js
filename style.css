@@ -42,12 +42,11 @@ input, textarea, select {
 }
 /* Estilos do Cartão */
 .card-display {
-
     background-color: #f8f9fa;
     border-radius: 10px;
     padding: 25px;
     text-align: center;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
     border-width: 3px;
 }
 .avatar { font-size: 4rem; margin-bottom: 10px; }

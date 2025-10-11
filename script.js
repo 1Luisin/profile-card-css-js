@@ -1,14 +1,28 @@
-// input elements
+// elementos de entrada
 const entradaNome = document.getElementById('name-input')
 const entradaBio = document.getElementById('bio-input');
 const seletorCor = document.getElementById('color-select');
+const entradaBorda = document.getElementById('border-select')
 
+//elementos do cartao 
+const corCartao = document.getElementById('profile-card');
+const tipoBorda = document.getElementById('profile-card');
 
-//card elements
-const elementosCartao = document.getElementById('profile-card');
 const nomeCartao = document.getElementById('card-name');
 const bioCartao = document.getElementById('card-bio');
 
+/*elemento de entrada
+const botaoModoEscuro = document.getElementById('modo-escuro');
+const botaoModoClaro = document.getElementById('modo-claro');
+// elemento do html
+const modoEscuro = document.getElementsByTagName('body');
+const modoClaro = document.getElementsByTagName('body');
+
+botaoModoEscuro.addEventListener("input", (evento) =>{
+    modoEscuro.style.backgroundColor = botaoModoEscuro.style.backgroundColor =rgb(0, 0, 0)
+
+})
+*/
 
 entradaNome.addEventListener("input", (evento) => {
     nomeCartao.textContent = entradaNome.value;
@@ -19,6 +33,11 @@ entradaBio.addEventListener("input", (evento) => {
     
 }); // pegando o valor do input e colocando no card
 
-selectColor.addEventListener("change", (evento) => {
-    elementosCartao.style.backgroundColor = selectColor.value;
+seletorCor.addEventListener("change", (evento) => {
+    corCartao.style.backgroundColor = seletorCor.value;
 }); // alterando a cor do card
+
+entradaBorda.addEventListener("change", (evento)=> {
+tipoBorda.style.borderStyle = entradaBorda.value;
+});
+
