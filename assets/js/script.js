@@ -37,7 +37,10 @@ seletorCor.addEventListener("change", (evento) => {
     corCartao.style.backgroundColor = seletorCor.value;
 }); // alterando a cor do card
 
-entradaBorda.addEventListener("change", (evento)=> {
-tipoBorda.style.borderStyle = entradaBorda.value;
+entradaBorda.addEventListener("change", (evento)=> {    
+    tipoBorda.classList.remove('borda-solida');
+    tipoBorda.classList.remove('borda-tracejada');
+    tipoBorda.classList.remove('borda-pontilhada')
+    tipoBorda.classList.add(entradaBorda.value); 
 });
 
