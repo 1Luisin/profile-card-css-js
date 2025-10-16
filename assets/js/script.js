@@ -1,15 +1,16 @@
 // elementos de entrada
-const entradaNome = document.getElementById('name-input')
+const entradaNome = document.getElementById('name-input');
 const entradaBio = document.getElementById('bio-input');
 const seletorCor = document.getElementById('color-select');
 const entradaBorda = document.getElementById('border-select')
-
+const entradaEmoji = document.getElementById('avatar-select')
 //elementos do cartao 
 const corCartao = document.getElementById('profile-card');
 const tipoBorda = document.getElementById('profile-card');
 
 const nomeCartao = document.getElementById('card-name');
 const bioCartao = document.getElementById('card-bio');
+const avatarCartao = document.getElementById('card-avatar')
 
 /*elemento de entrada
 const botaoModoEscuro = document.getElementById('modo-escuro');
@@ -38,9 +39,11 @@ seletorCor.addEventListener("change", (evento) => {
 }); // alterando a cor do card
 
 entradaBorda.addEventListener("change", (evento)=> {    
-    tipoBorda.classList.remove('borda-solida');
-    tipoBorda.classList.remove('borda-tracejada');
-    tipoBorda.classList.remove('borda-pontilhada')
+    tipoBorda.classList.remove('borda-solida','borda-tracejada','borda-pontilhada')
     tipoBorda.classList.add(entradaBorda.value); 
 });
+
+entradaEmoji.addEventListener("change", () =>{
+    avatarCartao.innerText = entradaEmoji.value;
+})
 
