@@ -1,17 +1,11 @@
-01: Primeiro, selecione todos os elementos do formulário (inputs, selects) e os elementos do cartão de preview (div do cartão, h3 do nome, p da bio, div do avatar).
+# Cartão de Visita 
 
-02: Atualização em Tempo Real (Texto):
+Projeto feito com base em criação de perfil de visita simples e prático. Feito com carinho. <3
 
-Adicione um event listener ao campo de nome e à bio para o evento input. Este evento dispara a cada tecla pressionada.
+## Como utilizar?
 
-Na função do evento, atualize o textContent do <h3> e do <p> no cartão com o valor (.value) do campo correspondente.
+Muito simples, basta entrar no site e colocar as decorações que você deseja que o JavaScript irá interpretar e te dar um resultado final.
 
-03: Atualização por Seleção (Estilos e Avatar):
+## Tecnologias:
 
-Adicione um event listener aos três <select> (cor, borda e avatar) para o evento change.
-
-Cor de Fundo: Na função do evento, altere a propriedade style.backgroundColor do cartão principal.
-
-04: Estilo da Borda: Remova as classes de borda existentes e adicione a nova classe correspondente ao value selecionado (ex: borda-solida).
-
-05: Avatar: Atualize o textContent do div do avatar com o emoji selecionado.
+Css, JavaScript e claro, Html5 </>
